@@ -1,0 +1,7 @@
+{
+  "name": "exerc_save",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

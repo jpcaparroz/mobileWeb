@@ -1,0 +1,94 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <img alt="logo" height="15px" src="assets/icon/saveLogo.png" />
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar> </ion-toolbar>
+  </ion-header>
+
+  <ion-searchbar value="Pesquisar Filme"></ion-searchbar>
+
+  <ion-row>
+    <ion-col>
+      <ion-card>
+        <img alt="starwars" height="80%" src="assets/starwars.jpg" />
+        <ion-card-header>
+          <ion-card-subtitle>recomendações
+            <ion-icon name="videocam-outline"></ion-icon>
+          </ion-card-subtitle>
+          <ion-card-title>Star Wars</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          Star Wars é uma franquia do tipo space opera estadunidense criada pelo
+          cineasta George Lucas, que conta com uma série de nove filmes de
+          fantasia científica e dois spin-offs.
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col>
+      <ion-card>
+        <img alt="vingadores" height="80%" src="assets/hulk.jpeg" />
+        <ion-card-header>
+          <ion-card-subtitle>recomendações
+            <ion-icon name="film-outline"></ion-icon>
+          </ion-card-subtitle>
+          <ion-card-title>Mulher Hulk</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          She-Hulk: Attorney at Law é uma série de televisão estadunidense de
+          super-herói de 2022 criada por Jessica Gao para o Disney+, baseada na
+          personagem Mulher-Hulk da Marvel Comics.
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <ion-badge slot="end" color="dark">1</ion-badge> <br /><br />O Poderoso
+        Chefão
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <ion-badge slot="end" color="dark">2</ion-badge> <br /><br />Parasita
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <ion-badge slot="end" color="dark">1</ion-badge> <br /><br />Batman
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <div class="center">
+    <ion-button alt="botao" color="dark">Curtir
+      <ion-icon name="happy-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+  <h2>Você deve assistir!!!</h2>
+  <ion-row class="images" size="small">
+    <ion-col>
+      <img
+        src="https://cinema10.com.br/upload/filmes/filmes_1485_110.jpg?default=poster"/>
+    </ion-col>
+    <ion-col>
+      <img src="https://lumiere-a.akamaihd.net/v1/images/beta_epic_payoff_brazil_2a5f625f.jpeg">
+    </ion-col>
+    <ion-col>
+      <img src="https://lumiere-a.akamaihd.net/v1/images/2_98a9a2e6.jpeg">
+    </ion-col>
+    <ion-col>
+      <img src="https://ingresso-a.akamaihd.net/prd/img/movie/sonic-2/fde04f56-1afb-4c71-9ff2-97dac723f8d8.jpg">
+    </ion-col>
+  </ion-row>
+</ion-content>
