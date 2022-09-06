@@ -1,0 +1,77 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Bindings | 👨‍🔧 {{pessoa ? pessoa.nome + ", " + pessoa.idade : visitante}}
+    </ion-title>
+    <ion-progress-bar color={{color}} value="0.80" buffer="0.5"></ion-progress-bar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    {{texto}}
+  </div>
+
+  <div class="input">
+    <ion-item>
+      <ion-label position="floating"> digite aqui algo</ion-label>
+      <ion-input>{{value}}</ion-input>
+    </ion-item>
+  </div>
+
+  <div class="input">
+    <ion-toggle [(ngModel)]="switch"></ion-toggle>
+    <p>{{switch ? 'True' : 'False'}}</p>
+  </div>
+
+  <div>
+    <ion-item>
+      <ion-label>Futebol Americano 🏈</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Boliche🎳</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Basquete 🏀</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+  </div>
+
+  <br>
+
+  <div>
+    <h2> Escolha o Método de Pagamento:</h2>
+    <ion-radio-group [(ngModel)]="paymentMethod">
+
+      <ion-item>
+        <ion-label>Dinheiro 💵</ion-label>
+        <ion-radio slot="start" value="dinheiro"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Cartão 💳</ion-label>
+        <ion-radio slot="start" value="cartao"></ion-radio>
+      </ion-item>
+
+    </ion-radio-group>
+  </div>
+
+  <div class="select">
+    <ion-item>
+      <ion-label>Escolha o Método de Pagamento</ion-label>
+      <ion-select placeholder="Escolha:">
+        <ion-select-option value="dinheiro">💵</ion-select-option>
+        <ion-select-option value="cartao">💳</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </div>
+
+  <div style="margin: auto; justify-content: center; display: grid;">
+    <h2> 💻 {{valor}}</h2>
+    <br>
+    <ion-button (click) ="somar()" color="white" fill="solid">🟢</ion-button>
+    <ion-button (click) ="subtrair()" color="white" fill="solid">🔴</ion-button>
+    <ion-button (click) ="resetar()" color="white" fill="solid">🟡</ion-button>
+  </div>
+</ion-content>
