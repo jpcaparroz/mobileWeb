@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <h2>Página de Cadastro</h2>
+    </header>
+    <nav>
+
+    </nav>
+
+    <article>
+        <form>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <strong>🤵🏻 Preencha:</strong> 
+                <br><br>
+                <label for="nome">Nome:</label>
+                <input type="text">
+
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text">
+
+                <br><br>
+                <label for="nascimento">Data de Nascimento:</label>
+                <input type="date">
+
+                <br><br>
+                <label for="cor">Cor Favorita:</label>
+                <input type="color">
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados da Entrega:</legend>
+                <strong>📍 Preencha:</strong> 
+                <br><br>
+
+                <label for="rua">Rua:</label>
+                <input type="text">
+
+                <label for="numero">Nº</label>
+                <input type="number">
+
+                <br><br>
+                <label for="cep">CEP:</label>
+                <input type="number">
+
+                <br><br>
+                <input type="radio" name="tipo" value="casa">
+                <label for="casa">Casa</label>
+                
+                <input type="radio" name="tipo" value="ap">
+                <label for="ap">Apartamento</label>
+            </fieldset>
+            <fieldset>
+                <legend>Comentários adicionais:</legend>
+                <label for="info">Escreva aqui:</label>
+                <textarea name="info" id="1" cols="30" rows="10"></textarea>
+
+                <br><br>
+                <label for="gostou">Você gostou deste formulário?</label>
+                <select name="avaliacao" id="2">
+                    <option value="Otimo">Ótimo 🔟</option>
+                    <option value="Medio">Médio 5️⃣</option>
+                    <option value="Pessimo">Péssimo 1️⃣</option>
+                </select>
+            </fieldset>
+            
+            <br><br>
+            <button type="submit">✅ Concluído</button>
+            <button type="reset">❌ Limpar</button>
+        </form>
+    </article>
+    
+</body>
+</html>
