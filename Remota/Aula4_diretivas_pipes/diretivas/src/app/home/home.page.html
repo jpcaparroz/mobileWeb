@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Nota
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div id="container">
+
+    <strong>
+      <p>
+        🧾 Sua nota é:
+      </p>
+    </strong>
+
+    <ion-button color="success" *ngIf="nota > 6; else falhou">
+      {{nota}}
+    </ion-button>
+
+    <ng-template #falhou>
+      <ion-button color="danger">
+        {{nota}}
+      </ion-button>
+    </ng-template>
+  </div>
+</ion-content>
