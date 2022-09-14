@@ -1,0 +1,64 @@
+#menu {
+    font-size: large;
+    font-family: Impact;
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+
+    
+    background-color:darkgray;
+
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+    width: 25%;
+}
+
+aside {
+    text-align: left;
+    background-color:tan;
+
+    float: right;
+    width: 30%;
+
+    border-radius: 30px;
+
+    margin-top: 5px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+section {
+    float: left;
+    text-align: center;
+
+    background-color: blanchedalmond;
+    width: 63%;
+    height: 600px;
+    
+    border-radius: 5px;
+    
+}
+
+.assinatura {
+    text-align: center;
+
+    margin-top: 750px;
+
+}
