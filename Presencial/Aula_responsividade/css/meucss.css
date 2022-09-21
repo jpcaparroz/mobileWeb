@@ -1,0 +1,31 @@
+body {
+    background-color: bisque;
+    padding: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+
+}
+
+.teste {
+    background-color:antiquewhite;
+    padding: inherit;
+}
+
+#lista li {
+    display: inline;
+    padding: inherit;
+}
+
+div > strong {
+    background-color: aliceblue;
+}
+
+p + p {
+    color:#f00; 
+}
+
+#menu h2~p {
+    color: coral;
+    display: inline;
+    padding:inherit;
+}
