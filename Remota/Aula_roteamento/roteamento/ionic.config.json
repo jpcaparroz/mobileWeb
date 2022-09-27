@@ -1,0 +1,7 @@
+{
+  "name": "roteamento",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
