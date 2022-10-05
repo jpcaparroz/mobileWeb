@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando</title>
+    <link rel="stylesheet"
+href="{{ url_for('static', filename='saveLogo.png') }}"
+type="text/css">
+    <style type="text/css">
+        #menu {
+    font-size: large;
+    font-family: Impact;
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+
+    
+    background-color:darkgray;
+
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+    width: 25%;
+}
+
+aside {
+    text-align: left;
+    background-color:tan;
+
+    float: right;
+    width: 30%;
+
+    border-radius: 30px;
+
+    margin-top: 5px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+section {
+    float: left;
+    text-align: center;
+
+    background-color: blanchedalmond;
+    width: 63%;
+    height: 600px;
+    
+    border-radius: 5px;
+    
+}
+
+.assinatura {
+    text-align: center;
+
+    margin-top: 750px;
+
+}
+    </style>
+</head>
+
+<body>
+    <img src="static/saveLogo.png" alt="logo">
+    <h1>{{ nome }}</h1>
+    <nav>
+        <ul id="menu">
+            <li><a href="home.html">Inicio</a></li>
+            <li>Sobre</li>
+            <li>Contato</li>
+        </ul>
+    </nav>
+
+    <section>
+        <strong>Titulo</strong>
+        <p>
+            fkspdofsdfgrg
+            gfdsg
+            erh
+            geherpokgeropkgerkopgkoperge
+            trpowkhkrthkwrthpokwrth
+            wrohkprffskpo
+        </p>
+    </section>
+
+    <aside>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum dolorum unde illum possimus blanditiis facilis
+        <br>
+        ipsum laudantium! Fugiat aspernatur perspiciatis iusto quis quibusdam eius in iure, quidem porro cum asperiores.
+        <br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, in numquam ipsam expedita quia itaque delectus
+        corporis ex sit error. Odio, debitis! Nam voluptas quasi, voluptatem nulla eveniet error assumenda.
+    </aside>
+
+    <aside>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam iste deleniti error cupiditate unde? Vel, modi
+        accusamus corporis neque sapiente vero obcaecati sed ducimus perferendis eveniet eius impedit repellendus
+        temporibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolorum, obcaecati eos cumque
+        commodi fugit esse sequi quisquam! Delectus officiis distinctio, nam a qui ex magnam. Rem fugiat modi
+        provident!Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint possimus ipsum quibusdam hic iure
+        dolor quis ex inventore. Dolor obcaecati nobis, voluptatem hic maiores rem blanditiis facere voluptate. Ullam,
+        adipisci! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo beatae, quas culpa nesciunt
+        necessitatibus dolores distinctio atque ut laborum quasi nostrum eveniet sequi rem. Facere quia illum sapiente
+        assumenda ea.
+    </aside>
+
+    <footer class="assinatura">
+        <hr>
+        Feito por <i>@ João Pedro Dias Caparroz</i>
+    </footer>
+
+</body>
+
+</html>
