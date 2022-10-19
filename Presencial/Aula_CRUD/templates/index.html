@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Filmes 🎬</title>
+    <link rel="stylesheet" href="css">
+    <style>
+
+        body {
+            background-color: antiquewhite;
+            text-align: center;
+        }
+
+        h1 {
+            font-style: oblique;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            background-color: azure;
+            margin-left: 40%;
+            margin-right: 40%;
+            padding: 15px;
+            border-radius: 15px;
+
+
+        }
+
+        form input{
+            text-align: center;
+            margin: 5px;
+
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inserir um filme</h1>
+    <form action="/add" method="post">
+        <input type="text" name="nome" id="nome" placeholder="Nome">
+        <br>
+        <input type="number" name="ano" id="ano" placeholder="Ano">
+        <br>
+        <input type="submit">
+    </form>
+    <hr>
+
+    <h1>Consultar Filme</h1>
+    <form action="/select" method="post">
+        <input type="text" name="id" id="id" placeholder="ID">
+        <br>
+        <input type="submit">
+    </form>
+    <hr>
+    <form action="/selectall" method="post">
+        <button type="submit">Pesquisar todos</button>
+    </form>
+    
+    
+</body>
+</html>
