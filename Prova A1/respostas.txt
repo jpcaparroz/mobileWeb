@@ -1,0 +1,74 @@
+1)a) HTML -> 
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧾 Prova A1 (a)</title>
+</head>
+
+<body>
+
+    <form action="" method="POST">
+        <fieldset>
+            <legend>Cadastro Empresa</legend>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+            <br> <br>
+            <label for="nascimento">Data de Nascimento</label>
+            <input type="date" name="nascimento" id="nascimento">
+            <br> <br>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="email">
+            <br>
+            <p>Qual é seu cargo?</p>
+            <input type="radio" name="cargo" id="cargo " value="Gerente">
+            <label for="cargo">Gerente</label>
+            <input type="radio" name="cargo" id="cargo " value="Analista">
+            <label for="cargo">Analista</label>
+            <input type="radio" name="cargo" id="cargo " value="Estagiário">
+            <label for="cargo">Estagiário</label>
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+
+</html>
+
+
+b) A função do action dentro da tag
+
+define para onde os dados preenchidos dos forms serão enviados após o submit do mesmo. Já o method, define qual método será utilizado pelo seu navegador para enviar esses dados, podendo ser GET ou POST.
+
+c) CSS -> 
+
+<style type="text/css">
+    body {
+        background-color: black;
+
+        font-family: Arial;
+    }
+
+    form {
+        color: white;
+
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #nome {
+        background-color: orange;
+    }
+
+    button {
+        background-color: orange;
+        width: 100%;
+    }
+
+</style>
+
+d) A tag link serve para definir ligações entre o documento e à algum recurso externo.Já a tag style serve para a estilização e da página html.
