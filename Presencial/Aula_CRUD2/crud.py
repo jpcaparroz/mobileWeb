@@ -134,3 +134,7 @@ def deletar_funcionario():
     banco.close()
     return '<h1>Funcionário Removido com Sucesso.</h1>'
 
+@app.route('/home')
+def home_formularios():
+    return render_template('home.html')
+
