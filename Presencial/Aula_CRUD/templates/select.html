@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+    <link rel="stylesheet" href="css">
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        h1 {
+            text-align: center;
+
+            background-color: aliceblue;
+            border-radius: 10px;
+            margin-left: 35%;
+            margin-right: 35%;
+
+        }
+        
+        div {
+            background-color: rgb(250, 243, 233);
+            text-align: center;   
+            
+            font-size: large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            padding: 5px;
+            margin-left: 40%;
+            margin-right: 40%;
+
+            border-radius: 50px;
+            box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.726) -3px -3px 6px 1px inset;
+        }
+    </style>
+</head>
+<body>
+    {% for res in result %}
+
+    <h1>🔍Resultado da Pesquisa</h1>
+    
+    <div>
+        <p>ID: {{res[0] }}</p>
+        <p>Nome: {{res[1] }}</p>
+        <p>Ano: {{res[2] }}</p>
+    </div>
+    <hr>
+    {% endfor %}
+    
+</body>
+</html>
